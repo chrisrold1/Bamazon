@@ -25,10 +25,10 @@ To create the application first i went to github, and i created a new repository
 
  And for the bamazonMager.js 
  this command will show you 4 options 
- ..* View products for sale 
- ..* view low inventory
- ..* Add to inventory   
- ..* Add New product
+ * View products for sale 
+ * view low inventory
+ * Add to inventory   
+ * Add New product
 
  if you selected for sale it will show all the list items that were added in the database and 
  if you selected Add new Product it will ask you the product Name department , the price per products 
