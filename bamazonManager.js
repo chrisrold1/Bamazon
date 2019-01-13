@@ -2,7 +2,7 @@
 var inquirer = require('inquirer');
 var mysql = require('mysql');
 
-// Define the MySQL connection parameters
+// Create the connection with the database 
 var connection = mysql.createConnection({
 	host: 'localhost',
 	port: 3306,

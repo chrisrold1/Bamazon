@@ -5,37 +5,31 @@ A Node app combine with my sequel
 Description
 This application implements a simple command line based storefront using the npm inquirer package and the MySQL database backend together with the npm mysql package. The application presents two interfaces: customer and manager.
 
-MySQL Database Setup
-In order to run this application, you should have the MySQL database already set up on your machine. If you don't, visit the MySQL installation page to install the version you need for your operating system. Once you have MySQL isntalled, you will be able to create the Bamazon database and the products table with the SQL code found in Bamazon.sql. Run this code inside your MySQL client like Sequel Pro to populate the database, then you will be ready to proceed with running the Bamazon customer and manager interfaces.
+To create the application first i went to github, and i created a new repository . I Copied the links and clone it to my computer. 
 
-Customer Interface
-The customer interface allows the user to view the current inventory of store items: item IDs, descriptions, department in which the item is located and price. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order.
+#To have this application Running
+ You must install mysql Workbench to create the database 
 
-To run the customer interface please follow the steps below:
+ i created a file named it bamazon.sql this file is where i put my query to CREATE a new database and INSERT valueS into it . After that i log in to mySQL and copy paste evrythings and no errow was throw.
 
-git clone git@github.com:angrbrd/bamazon.git
-cd bamazon
-npm install
-node bamazonCustomer.js
-Manager Interace
-The manager interface presents a list of four options, as below.
+ i created two file one for bamazonCustomer.js and for bamazonManager.js
 
-? Please select an option: (Use arrow keys)
-❯ View Products for Sale 
-  View Low Inventory 
-  Add to Inventory 
-  Add New Product
-The View Products for Sale option allows the user to view the current inventory of store items: item IDs, descriptions, department in which the item is located, price, and the quantity available in stock.
+ #To Run The Commands
+ To run the commands for the customer you will have to type 
+ node bamazonCustomer.js 
+ This Command will then show you a list of products that were inserted in the value of the database and by prompting a 
+ question of the item would you like to purchase .You can only select the items by ID. 2nd Questions  is total of that Items you need , and it will tell you congratulations that the items you asked for is in stock and by giving you the total of your order and a Thank you message and it will send you back to the bamazon in case you like to buy a new items
 
-The View Low Inventory option shows the user the items which currently have fewer than 100 units available.
+ And for the bamazonMager.js 
+ this command will show you 3 options 
+ View products for sale 
+ view low inventory
+ add to inventory   
+ Add New product
 
-The Add to Inventory option allows the user to select a given item ID and add additional inventory to the target item.
+ if you selected for sale it will show all the list items that were added in the database and 
+ if you selected Add new Product it will ask you the product Name department , the price per products 
+ How many in Stocks and  message items is added and if you go on terminal you will see that product is added
 
-The Add New Product option allows the user to enter details about a new product which will be entered into the database upon completion of the form.
 
-To run the manager interface please follow the steps below:
-
-git clone git@github.com:angrbrd/bamazon.git
-cd bamazon
-npm install
-node bamazonManager.js
+  
